@@ -1,5 +1,5 @@
 # element-vue
-
+> 集成VUE2.0 + Element框架
 ## Project setup
 ```
 npm install
