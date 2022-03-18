@@ -4,8 +4,10 @@ import router from './router'
 import store from './store'
 import Element from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
+import moment from 'moment';
 
 Vue.config.productionTip = false
+moment().format();
 
 Vue.use(Element);
 
