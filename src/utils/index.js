@@ -72,3 +72,25 @@ export function toolDialog(component, dialogOptions = null, componentProps = nul
         });
     })
 }
+
+/**
+ * 处理参数拼接
+ * @param url 路由
+ * @param params 参数
+ * @returns 拼接完成的链接
+ */
+export function handleParamsUrl(url, params) {
+    if (params == null) {
+        return url;
+    }
+    let keys = Object.keys(params);
+    for (let i = 0; i < keys.length; i++) {
+        let key = keys[i];
+        if (i == 0) {
+            url += `?${key}=${params[key]}`;
+        } else {
+            url += `&${key}=${params[key]}`;
+        }
+    }
+    return url;
+}
