@@ -10,6 +10,10 @@ export let menuList = [
             {
                 path: '/Triangle',
                 text: '杨辉三角'
+            },
+            {
+                path: '/DialogExample',
+                text: '弹窗示例'
             }
         ]
     },

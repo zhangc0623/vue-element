@@ -19,6 +19,11 @@ const routes = [
         path: '/Triangle',
         name: 'Triangle',
         component: () => import('../views/Triangle.vue')
+      },
+      {
+        path: '/DialogExample',
+        name: 'DialogExample',
+        component: () => import('../views/DialogExample.vue')
       }
     ]
   },
