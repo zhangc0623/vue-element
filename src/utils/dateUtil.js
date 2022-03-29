@@ -1,3 +1,7 @@
+/**
+ * 时间相关处理工具类
+ */
+
 import moment from 'moment'
 
 /**

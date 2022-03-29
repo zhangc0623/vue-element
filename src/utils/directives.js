@@ -1,5 +1,6 @@
-// directives.js
-
+/**
+ * 自定义vue指令
+ */
 import Vue from 'vue'
 
 export default {

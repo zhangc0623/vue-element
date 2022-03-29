@@ -68,7 +68,8 @@
 
 <script>
 import data from '@/assets/json/data001.json'
-import {dateAdd, getWeekday} from '@/utils/date'
+import {dateAdd, getWeekday} from '@/utils/dateUtil'
+import {isDataNull} from "@/utils";
 export default {
   name: 'HomeView',
   data() {

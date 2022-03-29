@@ -94,3 +94,28 @@ export function handleParamsUrl(url, params) {
     }
     return url;
 }
+
+/**
+ * 字符串判空
+ * @param str 字符串
+ * @returns {boolean}
+ */
+export function isNull(str) {
+    if (str != null && str !== undefined && str !== '') {
+        return false
+    }
+    return true
+}
+
+/**
+ * 判断对象是否为{}
+ * @param obj
+ * @returns {boolean}
+ */
+export function objectIsNull(obj) {
+    if (Object.keys(obj).length !== 0) {
+        return false
+    }
+    return true
+}
+
