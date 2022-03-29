@@ -8,8 +8,8 @@ export let menuList = [
                 text: '表格合并行'
             },
             {
-                path: '/Triangle',
-                text: '杨辉三角'
+                path: '/LoadMoreExample',
+                text: '下拉框加载更多'
             },
             {
                 path: '/DialogExample',

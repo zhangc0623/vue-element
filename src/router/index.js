@@ -16,15 +16,15 @@ const routes = [
         component: Table
       },
       {
-        path: '/Triangle',
-        name: 'Triangle',
-        component: () => import('../views/Triangle.vue')
-      },
-      {
         path: '/DialogExample',
         name: 'DialogExample',
         component: () => import('../views/DialogExample.vue')
-      }
+      },
+      {
+        path: '/LoadMoreExample',
+        name: 'LoadMoreExample',
+        component: () => import('../views/LoadMoreExample.vue')
+      },
     ]
   },
 ]
