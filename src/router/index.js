@@ -25,6 +25,11 @@ const routes = [
         name: 'LoadMoreExample',
         component: () => import('../views/LoadMoreExample.vue')
       },
+      {
+        path: '/SvgExample',
+        name: 'SvgExample',
+        component: () => import('../views/SvgExample.vue')
+      }
     ]
   },
 ]

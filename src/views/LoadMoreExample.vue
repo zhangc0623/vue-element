@@ -24,7 +24,11 @@ export default {
   methods: {
     loadMore() {
       this.count++
-      this.list = [...this.list, ...this.handleList()]
+      if (this.count < 3) {
+        this.list = [...this.list, ...this.handleList()]
+      } else {
+        this.selectText = '没有更多了'
+      }
     },
     handleList() {
       let arr = []

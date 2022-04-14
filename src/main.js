@@ -15,6 +15,9 @@ import VueBus from 'vue-bus';
 // 注册滚动条加载触发事件v-loadmore绑定
 import directives from '@/utils/directives'
 
+// 引入icons文件夹下所有的svg图标
+import '@/icons/index';
+
 // 关闭生产模式下的提示
 Vue.config.productionTip = false
 

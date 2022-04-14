@@ -14,6 +14,10 @@ export let menuList = [
             {
                 path: '/DialogExample',
                 text: '弹窗示例'
+            },
+            {
+                path: '/svgExample',
+                text: 'svg示例'
             }
         ]
     },

@@ -112,7 +112,7 @@ export default {
   },
   mounted() {
     this.getSpanArr(this.tableData);
-    this.date = getWeekday(new Date())
+    this.date = dateAdd(new Date(), 'd', -1, 'yyyy-MM')
   }
 }
 </script>
