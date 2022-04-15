@@ -29,6 +29,11 @@ const routes = [
         path: '/SvgExample',
         name: 'SvgExample',
         component: () => import('../views/SvgExample.vue')
+      },
+      {
+        path: '/TimeLineExample',
+        name: 'TimeLineExample',
+        component: () => import('../views/TimeLineExample.vue')
       }
     ]
   },

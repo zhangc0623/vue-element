@@ -18,6 +18,10 @@ export let menuList = [
             {
                 path: '/svgExample',
                 text: 'svg示例'
+            },
+            {
+                path: '/TimeLineExample',
+                text: '时间轴示例'
             }
         ]
     },

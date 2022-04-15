@@ -84,28 +84,38 @@ export let menuList = [
 7. 封装本地svg指令，可更改颜色大小等属性
 
 ```
-指令实现参考：[vue使用本地svg](https://www.jianshu.com/p/28827f4c60f4)
+指令实现参考：https://www.jianshu.com/p/28827f4c60f4
 
-注意若是vue.config.js中配置svg-sprite-loader，参考以下代码:
+注意
+若是vue.config.js中配置svg-sprite-loader，参考以下代码:
 
 // 添加svg-sprite-loader
-chainWebpack: config => {
-config.module
-  .rule('svg')
-  .exclude.add(resolve('src/icons'))
-  .end()
-config.module
-  .rule('icons')
-  .test(/\.svg$/)
-  .include.add(resolve('src/icons'))
-  .end()
-  .use('svg-sprite-loader')
-  .loader('svg-sprite-loader')
-  .options({
-    symbolId: 'icon-[name]'
-  })
-  .end()
-}
+  chainWebpack: config => {
+    config.module
+      .rule('svg')
+      .exclude.add(resolve('src/icons'))
+      .end()
+    config.module
+      .rule('icons')
+      .test(/\.svg$/)
+      .include.add(resolve('src/icons'))
+      .end()
+      .use('svg-sprite-loader')
+      .loader('svg-sprite-loader')
+      .options({
+        symbolId: 'icon-[name]'
+      })
+      .end()
+  }
+
+若svg中已经定义了颜色，需要删掉svg中的fill属性，否则会覆盖掉配置中的颜色
+```
+
+
+8. 封装axios请求
+
+```
+封装axios请求：utils/axios.js
 
 ```
 
