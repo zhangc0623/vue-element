@@ -22,6 +22,10 @@ export let menuList = [
             {
                 path: '/TimeLineExample',
                 text: '时间轴示例'
+            },
+            {
+                path: '/ListScrollExample',
+                text: '点击上下按钮列表滚动示例'
             }
         ]
     },

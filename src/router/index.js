@@ -34,6 +34,11 @@ const routes = [
         path: '/TimeLineExample',
         name: 'TimeLineExample',
         component: () => import('../views/TimeLineExample.vue')
+      },
+      {
+        path: '/ListScrollExample',
+        name: 'ListScrollExample',
+        component: () => import('../views/ListScrollExample.vue')
       }
     ]
   },
