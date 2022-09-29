@@ -115,7 +115,7 @@ export let menuList = [
 8. 封装axios请求
 
 ```
-封装axios请求：utils/axios.js
+封装axios请求：api/index.js
 
 ```
 
